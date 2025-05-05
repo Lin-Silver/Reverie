@@ -96,11 +96,18 @@ The fine-tuned model will be available in the `./reverie/model` directory
 - CUDA-compatible GPU with at least 8GB VRAM (strongly recommended)
 
 ### Linux-specific Requirements
-For Ubuntu/Debian, you may need to install these packages:
+For Ubuntu/Debian, you need to install these packages:
 ```bash
 sudo apt-get update
 sudo apt-get install -y python3-venv python3-dev git git-lfs
 ```
+
+Note: The exact package name for `python3-venv` depends on your Python version. For example, if you're using Python 3.12, you'll need to install `python3.12-venv`:
+```bash
+sudo apt-get install -y python3.12-venv
+```
+
+The scripts will attempt to detect and install the correct package automatically, but you may need to install it manually if the automatic detection fails.
 
 For other Linux distributions, install the equivalent packages using your package manager.
 
